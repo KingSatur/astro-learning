@@ -1,4 +1,5 @@
 ---
+import Footer from '@components/Footer.vue'
 import Header from '@components/Header'
 import Base from '@layouts/Base.astro'
 import type { GetStaticPaths } from 'astro'
@@ -19,4 +20,5 @@ const { Content } = await post.render()
 <Base title="learningastro.tips">
 	<Header title="learningastro.tips" />
 	<Content />
+	<Footer />
 </Base>
