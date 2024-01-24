@@ -1,6 +1,7 @@
 ---
 import Footer from '@components/Footer.vue'
 import Header from '@components/Header'
+import Social from '@components/Social.svelte'
 import Base from '@layouts/Base.astro'
 import type { GetStaticPaths } from 'astro'
 import { getCollection } from 'astro:content'
@@ -20,5 +21,6 @@ const { Content } = await post.render()
 <Base title="learningastro.tips">
 	<Header title="learningastro.tips" />
 	<Content />
+	<Social />
 	<Footer />
 </Base>
